@@ -1,22 +1,48 @@
-{
+﻿{
   "name": "koishi-plugin-sticker-convert",
-  "description": "sticker",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "QQ表情包转换插件，支持将QQ表情转换为图片或文件格式，并提供相册管理功能",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
-    "dist"
+    "readme.md"
   ],
   "license": "MIT",
-  "scripts": {},
+  "author": {
+    "name": "WhiteBr1ck",
+    "url": "https://github.com/WhiteBr1ck"
+  },
+  "homepage": "https://github.com/WhiteBr1ck/koishi-plugin-sticker-convert#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhiteBr1ck/koishi-plugin-sticker-convert.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WhiteBr1ck/koishi-plugin-sticker-convert/issues"
+  },
   "keywords": [
-    "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "qq",
+    "sticker",
+    "emoji",
+    "converter",
+    "onebot",
+    "chatbot"
   ],
-  "devDependencies": {},
   "peerDependencies": {
     "koishi": "^4.18.7"
+  },
+
+  "koishi": {
+    "description": {
+      "zh": "QQ表情包转换插件，支持相册管理"
+    },
+    "service": {
+      "required": [
+        "database"
+      ]
+    }
   }
 }
